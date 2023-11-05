@@ -1,0 +1,81 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 30,
+    "spacing": 0,
+    // Choose the order of the modules
+    "modules-left": ["wlr/workspaces", "hyprland/mode", "custom/media"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["tray", "battery", "network", "pulseaudio", "cpu", "memory", "disk", "clock"],
+    //Modules configuration
+    "wlr/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}",
+    },
+    "hyprland/window": {
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "battery": {
+        "bat": "BAT1",
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "[B] {capacity}%",
+        "format-charging": "[B] c-{capacity}%",
+        "format-plugged": "[B] p-{capacity}%",
+        "format-alt": "{time}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "[N] {essid} ({signalStrength}%)",
+        "format-ethernet": "{ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} - {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "[N] Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "nm-connection-editor"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "[V] {icon}{volume}%{format_source}",
+        "format-bluetooth": "[V] {volume}%",
+        "format-bluetooth-muted": "[V] M",
+        "format-muted": "[V] M",
+        "format-source": "",
+        "format-source-muted": "M",
+        "format-icons": {
+            "headphone": "hp:",
+            "hands-free": "hf:",
+            "headset": "hs:",
+            "phone": "ph:",
+            "portable": "po:",
+            "car": "ca:",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "cpu": {
+        "format": "[C] {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "[M] {}%"
+    },
+    "disk": {
+        "interval": 60,
+        "format": "[D] {percentage_free}%",
+        "path": "/"
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+}
