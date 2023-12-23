@@ -4,7 +4,7 @@
     "height": 30,
     "spacing": 0,
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces", "hyprland/mode", "custom/media"],
+    "modules-left": ["hyprland/workspaces", "custom/media"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["tray", "battery", "network", "pulseaudio", "cpu", "memory", "disk", "clock"],
     //Modules configuration
@@ -14,6 +14,10 @@
         "format": "{name}",
     },
     "hyprland/window": {
+    },
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate"
     },
     "tray": {
         // "icon-size": 21,

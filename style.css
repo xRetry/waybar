@@ -2,50 +2,18 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
-    /*
-    --bg0     :#010b14;  Dark bg (status line and float) 
-    --bg1     :#192330;  Default bg 
-    --bg2     :#212e3f;  Lighter bg (colorcolm folds) 
-    --bg3     :#1a2d3d;  Lighter bg (cursor line) 
-    --bg4     :#39506d;  Conceal, border fg 
-    --fg0     :#d6d6d7;  Lighter fg 
-    --fg1     :#cdcecf;  Default fg 
-    --fg2     :#aeafb0;  Darker fg (status line) 
-    --fg3     :#71839b;  Darker fg (line numbers, fold colums) 
-    --sel0    :#2b3b51;  Popup bg, visual selection bg 
-    --sel1    :#3c5372;  Popup sel bg, search bg 
-    --high    :#719cd6;
-    */
 }
 
 window#waybar {
-    background-color: #010b14;
-    border-bottom: 3px solid #010b14;
-    color: #010b14;
+    background-color: #04060e;
+    border-bottom: 3px solid #04060e;
+    color: #c2c2c2;
     transition-property: background-color;
     transition-duration: .5s;
 }
 
 window#waybar.hidden {
     opacity: 0.2;
-}
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
 }
 
 button {
@@ -74,7 +42,7 @@ button:hover {
 }
 
 #workspaces button.active {
-    background-color: #2b3b51;
+    background-color: #102543;
     border-bottom: 3px solid #719cd6;
 }
 
@@ -97,13 +65,18 @@ button:hover {
 #tray,
 #mode {
     padding: 0 7px;
-    color: #cdcecf;
 }
 
 #window,
 #workspaces {
     margin: 0 4px;
 }
+
+/*
+.modules-right > * {
+    border-left: 1px solid #eff4fb;
+}
+*/
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
@@ -120,20 +93,7 @@ label:focus {
 }
 
 #custom-media {
-    background-color: #66cc99;
     min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
-#tray {
-    background-color: #2980b9;
 }
 
 #tray > .passive {
@@ -150,7 +110,7 @@ label:focus {
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
+    color: #81b29a; /* green */
 }
 
 @keyframes blink {
@@ -167,31 +127,6 @@ label:focus {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-}
-
-#network {
-    background-color: #39506d;
-}
-    
-
-#pulseaudio {
-    background-color: #1a2d3d;
-}
-
-#cpu {
-    background-color: #39506d;
-}
-
-#memory {
-    background-color: #1a2d3d;
-}
-
-#disk {
-    background-color: #39506d;
-}
-
-#clock {
-    background-color: #1a2d3d;
 }
 
 /* Hover effect on clickable elements */
