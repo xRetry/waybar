@@ -3,10 +3,10 @@
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
     /*
-    --bg0     :#131a24;  Dark bg (status line and float) 
+    --bg0     :#010b14;  Dark bg (status line and float) 
     --bg1     :#192330;  Default bg 
     --bg2     :#212e3f;  Lighter bg (colorcolm folds) 
-    --bg3     :#29394f;  Lighter bg (cursor line) 
+    --bg3     :#1a2d3d;  Lighter bg (cursor line) 
     --bg4     :#39506d;  Conceal, border fg 
     --fg0     :#d6d6d7;  Lighter fg 
     --fg1     :#cdcecf;  Default fg 
@@ -19,9 +19,9 @@
 }
 
 window#waybar {
-    background-color: #131a24;
-    border-bottom: 3px solid #131a24;
-    color: #131a24;
+    background-color: #010b14;
+    border-bottom: 3px solid #010b14;
+    color: #010b14;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -146,7 +146,7 @@ label:focus {
 }
 
 #battery {
-    background-color: #29394f;
+    background-color: #1a2d3d;
 }
 
 #battery.charging, #battery.plugged {
@@ -175,7 +175,7 @@ label:focus {
     
 
 #pulseaudio {
-    background-color: #29394f;
+    background-color: #1a2d3d;
 }
 
 #cpu {
@@ -183,7 +183,7 @@ label:focus {
 }
 
 #memory {
-    background-color: #29394f;
+    background-color: #1a2d3d;
 }
 
 #disk {
@@ -191,7 +191,7 @@ label:focus {
 }
 
 #clock {
-    background-color: #29394f;
+    background-color: #1a2d3d;
 }
 
 /* Hover effect on clickable elements */
