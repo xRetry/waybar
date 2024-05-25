@@ -31,30 +31,29 @@
             "critical": 15
         },
         "format": "[B] {capacity}%",
-        "format-charging": "[B] c-{capacity}%",
-        "format-plugged": "[B] p-{capacity}%",
+        "format-charging": "[B] c-{capacity}%  -  ",
+        "format-plugged": "[B] p-{capacity}%  -  ",
         "format-alt": "{time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "[N] {essid} ({signalStrength}%)",
-        "format-ethernet": "{ipaddr}/{cidr}",
-        "tooltip-format": "{ifname} - {gwaddr}",
-        "format-linked": "{ifname} (No IP)",
-        "format-disconnected": "[N] Disconnected",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "format-wifi": "[N] {essid} ({signalStrength}%)  -  ",
+        "format-ethernet": "[N] {ipaddr}/{cidr}  -  ",
+        "tooltip-format": "[N] {ifname} - {gwaddr}  -  ",
+        "format-linked": "[N] {ifname} (No IP)  -  ",
+        "format-disconnected": "[N] Disconnected  -  ",
+        "format-alt": "[N] {ifname}: {ipaddr}/{cidr}  -  ",
         "on-click": "nm-connection-editor"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "[V] {icon}{volume}%{format_source}",
-        "format-bluetooth": "[V] {volume}%",
-        "format-bluetooth-muted": "[V] M",
-        "format-muted": "[V] M",
+        "format": "[V] {icon}{volume}%{format_source}  -  ",
+        "format-bluetooth": "[V] {volume}%  -  ",
+        "format-bluetooth-muted": "[V] M  -  ",
+        "format-muted": "[V] M  -  ",
         "format-source": "",
-        "format-source-muted": "M",
+        "format-source-muted": "M  -  ",
         "format-icons": {
             "headphone": "hp:",
             "hands-free": "hf:",
@@ -67,19 +66,19 @@
         "on-click": "pavucontrol"
     },
     "cpu": {
-        "format": "[C] {usage}%",
+        "format": "[C] {usage}%  -  ",
         "tooltip": false
     },
     "memory": {
-        "format": "[M] {}%"
+        "format": "[M] {}%  -  "
     },
     "disk": {
         "interval": 60,
-        "format": "[D] {percentage_free}%",
+        "format": "[D] {percentage_free}%  -  ",
         "path": "/"
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format": "{:%Y-%m-%d  %H:%M}  "
     },
 }
