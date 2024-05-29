@@ -30,10 +30,10 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "[B] {capacity}%",
+        "format": "[B] {capacity}%  -  ",
         "format-charging": "[B] c-{capacity}%  -  ",
         "format-plugged": "[B] p-{capacity}%  -  ",
-        "format-alt": "{time}",
+        // "format-alt": "{time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
     },
