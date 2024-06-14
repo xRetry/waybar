@@ -11,7 +11,7 @@
     "wlr/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
-        "format": "{name}",
+        "format": "{name}"
     },
     "hyprland/window": {
     },
